@@ -1,0 +1,91 @@
+# ============================================================================
+# Python & Environment Cleanliness
+# ============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments (Local to your machine)
+venv/
+env/
+textS/
+textSummarizer.egg-info/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Conda environments
+.conda/
+conda-env/
+
+# Pipenv & Poetry local directories
+.pipenv/
+.poetry/
+poetry.lock
+
+# ============================================================================
+# ML/Data Science Specifics (Crucial to exclude from Git)
+# ============================================================================
+# Local data directories (Store your datasets here locally)
+data/
+datasets/
+*.csv
+*.json
+*.parquet
+*.tsv
+*.xlsx
+
+# Model weights, checkpoints, and large binaries
+artifacts/
+saved_models/
+checkpoints/
+models/
+*.pkl
+*.h5
+*.pth
+*.pt
+*.onnx
+*.joblib
+*.ckpt
+
+# DVC (Data Version Control) cache if you use it
+.dvc/cache/
+.dvc/tmp/
+
+# TensorBoard logs & MLflow run outputs
+logs/
+mlruns/
+lightning_logs/
+.tensorboard/
+
+# ============================================================================
+# OS & IDE Specifics
+# ============================================================================
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code settings and local workspace configs
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ============================================================================
+# Security & Configurations
+# ============================================================================
+# Local environment variables containing secret keys/tokens
+.env
+.flaskenv
+*.secret
+secrets.yaml
